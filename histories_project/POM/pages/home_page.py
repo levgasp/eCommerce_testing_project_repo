@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from histories_project.POM.lib.helpers import Helpers
+from histories_project.POM.library.helpers import Helpers
 
 
 class HomePage(Helpers):
