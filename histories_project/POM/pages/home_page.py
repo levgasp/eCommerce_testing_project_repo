@@ -16,5 +16,3 @@ class HomePage(Helpers):
     def click_on_saturnalia_and_christmas(self):
         self.find_and_click(self.how_did_christmas_start_loc)
 
-    def back_to_previous_page(self):
-        self.driver.back()

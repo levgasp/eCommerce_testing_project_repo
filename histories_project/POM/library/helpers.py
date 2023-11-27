@@ -70,3 +70,6 @@ class Helpers:
 
     def get_file_in_temp_folder(self, FName):
         return path.join(path.dirname(path.dirname(path.realpath(__file__))), 'testdata\\' + FName)
+
+    def back_to_previous_page(self):
+        self.driver.back()
