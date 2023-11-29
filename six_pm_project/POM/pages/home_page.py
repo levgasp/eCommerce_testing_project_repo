@@ -22,4 +22,3 @@ class HomePage(Helpers):
     def click_on_accessories_section(self):
         self.find_and_click(self.accessories_section_loc)
 
-
