@@ -3,9 +3,10 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from histories_project.POM.pages.home_page import HomePage
-from histories_project.POM.pages.how_did_christmas_start_page import HowDidChristmasStart
-from histories_project.TestingData import test_data
+from six_pm_project.POM.pages.favorites_page import FavoritesPage
+from six_pm_project.POM.pages.home_page import HomePage
+from six_pm_project.POM.pages.bags_page import BagsPage
+from six_pm_project.TestingData import test_data
 
 driver = None
 
@@ -56,8 +57,8 @@ def get_driver(request, get_browser):
     driver.implicitly_wait(10)
     # Add in here each page from the POM in order to initialize the driver for each one.
     request.cls.homepage = HomePage(driver)
-    request.cls.howdidchristmasstartpage = HowDidChristmasStart(driver)
-    request.cls.saturnaliaandchristmas = HomePage(driver)
+    request.cls.bagspage = BagsPage(driver)
+    request.cls.favoritespage = FavoritesPage(driver)
     driver.get(test_data.url)
     yield driver
     driver.quit()
