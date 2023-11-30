@@ -4,7 +4,7 @@ from six_pm_project.POM.library.helpers import Helpers
 
 
 class SearchPage(Helpers):
-    wallets_topic_loc = (By.CSS_SELECTOR, '[data-eventvalue="B-TOPCAT-Wallets-42020"]')
+    wallets_topic_loc = (By.CSS_SELECTOR, '[alt="Wallets"]')
     wallets_search_result_first_item_heart_loc = (By.CSS_SELECTOR, '[class="gga-z kga-z lga-z"]')
     favorites_general_loc = (By.LINK_TEXT, 'Favorites')
 

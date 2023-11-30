@@ -13,7 +13,7 @@ class FavoritesPage(Helpers):
 
     def assertion_title_of_favorites(self):
         actual_result_favorites_title = self.find(self.title_of_favorites_loc, get_text=True)
-        expected_result_favorites_title = "Handbags"
+        expected_result_favorites_title = "Favorites"
         assert_that(actual_result_favorites_title, expected_result_favorites_title)
 
     def click_on_added_item(self):
