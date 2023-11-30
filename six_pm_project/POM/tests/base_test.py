@@ -16,7 +16,6 @@ class BaseTest:
         self.homepage.click_on_password_field_and_input_password()
         self.homepage.click_on_submit_btn()
         time.sleep(3)
-        # self.homepage.click_on_main_badge()
         self.homepage.click_on_search_field_and_input_word()
         self.searchresultpage.click_on_wallets_topic()
         self.searchresultpage.click_on_wallets_search_result_first_item_heart()
