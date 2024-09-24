@@ -8,7 +8,7 @@ class HomePage(Helpers):
     def __init__(self, driver):
         super().__init__(driver)
 
-    login_button_loc = (By.CSS_SELECTOR, '[class="qa-z"]')
+    login_button_loc = (By.CSS_SELECTOR, '[class="F-z"]')
     email_field_loc = (By.CSS_SELECTOR, '[name="email"]')
     password_field_loc = (By.CSS_SELECTOR, '[name="password"]')
     submit_btn_loc = (By.CSS_SELECTOR, '[id="signInSubmit"]')

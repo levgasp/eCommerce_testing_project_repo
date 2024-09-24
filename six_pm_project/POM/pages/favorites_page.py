@@ -6,10 +6,9 @@ from six_pm_project.POM.library.helpers import Helpers
 
 class FavoritesPage(Helpers):
     title_of_favorites_loc = (By.LINK_TEXT, 'Favorites')
-    added_item_loc = (By.CSS_SELECTOR, '[class="Y5-z"]')
-    particular_added_item_loc = (By.CSS_SELECTOR, '[src="https://m.media-amazon.com/images/I/71QkS0bwurL._AC_SX400_.'
-                                                  'jpg"]')
-    selected_item_title_loc = (By.LINK_TEXT, 'Juicy Couture Cool Collar Bifold')
+    added_item_loc = (By.CSS_SELECTOR, '[class="m5-z"]')
+    particular_added_item_loc = (By.XPATH, '//*[@src="https://m.media-amazon.com/images/I/71TS1f2IvpL._AC_SX400_.jpg"]')
+    selected_item_title_loc = (By.LINK_TEXT, 'Nine West Zuri Slg Organizer Wallet')
 
     def assertion_title_of_favorites(self):
         actual_result_favorites_title = self.find(self.title_of_favorites_loc, get_text=True)
